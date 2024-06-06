@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    border-bottom: 1px solid #333;
+}
+
+.menu-icon, .search-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+.new-on-netflix
+{
+    display: flexbox;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.carousel-container, .continue-watching-container, .new-on-netflix-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.carousel-item, .continue-watching-item {
+    flex: 0 0 auto;
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+}
+
+.carousel-item img, .continue-watching-item img {
+    width: 100%;
+    height: 95%;
+    border-radius: 4px;
+}
+
+.label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.continue-watching-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.continue-watching-item:hover .overlay {
+    opacity: 1;
+}
+
+.play-button {
+    font-size: 40px;
+    color: #fff;
+}
